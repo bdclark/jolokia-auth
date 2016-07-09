@@ -1,0 +1,8 @@
+language: java
+deploy:
+  provider: releases
+  api_key:
+    secure: tTJRfJtfAMl+/Ymx5Ew6IWK2QaMQ/YCFXFsn+6dNMqLsHqs1ba91LbO4mMUbpWvWQ/uRqmEIgIVtTF2H9eiM/R7kLQAxRsYqWNua8EIWmc/wItHaGPt1TCejJoYWY/psG4dtqmf1E8ePK5wr5rWjknyv90JP3nU6qd+2ZIgA+5pOF3+rLdhoCyOsPMzOPpCAHuX/lv4n4FKydDQNUsKFYOTnchBZME1/JImKFGhFzmvqip9lYRFH84nnvfXNzC2iSxiAHjtaU23S5sIg1qQbK9lHeo7T3rRPzilXlK4z58k6qpipYLAV55Kji/+CiYcww1Gv0YdRAZdNGq1ixZj/X44MHoHRdFQuim+F8ImTXJ9boivCgOIlW6u/RzN9X5i6PNYbA4YzfJ15qlt/AglBYpu15DiACMWYS1KXVD29k+1v3zLh1yQ2gr02Q0/RZB3NYZmvRv34WQ7udTSfHoXKAC50KCzMTRl1RyEBlqsnMUa2Bai7NDDbusVnYHr/JfaL/mxl7APcX/aYuhhEmiegbtsJTgtIzhi5p5dytbMpOkauATq5Uorqj3ng2CuR85UpwCX1WT08ZwvtbxxFKfsoM1jZONmm0qYJH5WJWYkRmmq3TWlOKrKLtzsx+QPYRxEpMxt1OJlQRl4eZ08GmrP0DOMUIyhWEmxHNbztpEbvCVs=
+  file: target/jolokia-auth-$TRAVIS_TAG.war
+  on:
+    tags: true
