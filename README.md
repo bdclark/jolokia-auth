@@ -1,5 +1,7 @@
 # jolokia-auth
 
+[![Build Status](https://travis-ci.org/bdclark/jolokia-auth.svg?branch=master)](https://travis-ci.org/bdclark/jolokia-auth)
+
 [Jolokia][1] war agent with basic authentication enabled.
 
 The role `Jolokia` has full access to all resources. This role must be
